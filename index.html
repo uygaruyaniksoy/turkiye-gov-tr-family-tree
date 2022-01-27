@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="familyTree">
+    </div>
+
+
+    <script src="d3.min.js" ></script>
+    <script src="content.js" ></script>
+    <script>
+const family = {
+    name: "#familyTree",
+    children: [
+      {
+        name: "child #1",
+        children: [
+          { name: "grandchild #1",
+        children: [
+          { name: "grandchild #1" },
+          { name: "grandchild #2" },
+        ]
+        },
+          { name: "grandchild #2" },
+        ]
+      },
+      {
+        name: "child #2",
+  children: [
+          { name: "grandchild #1" },
+          { name: "grandchild #2" },
+        ]
+      }
+    ]
+  }
+      drawChart(family)
+    </script>
+  
+<div class="resultContainer">
+            <div class="tableWrapper"><table class="resultTable striped">
+                <caption style="text-align:center">
+                    <strong>
+                        T.C.<br>
+                        İÇİŞLERİ BAKANLIĞI<br>
+                        NÜFUS VE VATANDAŞLIK İŞLERİ GENEL MÜDÜRLÜĞÜ<br>
+                        ALT ÜST SOY BELGESİ
+                    </strong>
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Sıra</th>
+                        <th scope="col">C</th>
+                        <th scope="col" class="ancestors">Yakınlık Derecesi</th>
+                        <th scope="col">Adı</th>
+                        <th scope="col">Soyadı</th>
+                        <th scope="col">Baba Adı</th>
+                        <th scope="col">Ana Adı</th>
+                        <th scope="col" class="birth">Doğum Yeri ve Tarihi</th>
+                        <th scope="col">İl-İlçe-Mahalle/Köy</th>
+                        <th scope="col" class="family-num">Cilt-Hane-Birey Sıra No</th>
+                        <th scope="col" class="marriage">Medeni Hali</th>
+                        <th scope="col">Durumu</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table></div>
+                        	<br>
+                <div class="warningContainer">
+                    Bu bilgiler 02.01.2022 01:03:33 tarihinde oluşturulmuştur.
+                </div>
+                    </div>
+  </body>
+</html>

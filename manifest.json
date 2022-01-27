@@ -1,0 +1,20 @@
+{
+  "name": "Soy agaci",
+  "description": "E devlet soy agacinizi gorsellestirin",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.turkiye.gov.tr/nvi-alt-ust-soy-bilgisi-sorgulama"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "js": [
+        "d3.min.js",
+        "content.js"
+      ]
+    }
+  ]
+}
